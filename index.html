@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaquery.css" />
+    <title>PRATICANDO FORMULARIO</title>
+  </head>
+  <body>
+    <main>
+      <div id="imagem">
+        <h1>Cadastro de funcionario</h1>
+
+        <form action="cadastro.php">
+          <p>
+            <label for="Nome"> Nome:</label>
+            <input
+              type="text"
+              name="Nome"
+              id="Nome"
+              minlength="3"
+              maxlength="30"
+              required
+              placeholder="nome completo"
+            />
+          </p>
+
+          <p>
+            <label for="Idade">Idade:</label>
+            <input
+              type="text"
+              name="Idade"
+              id="Idade"
+              maxlength="2"
+              required
+              placeholder="Idade atual "
+            />
+          </p>
+
+          <p>
+            <label for="Cidade">Cidade:</label>
+            <input
+              type="text"
+              name="Cidade"
+              id="Cidade"
+              required
+              placeholder="Cidade onde mora"
+            />
+          </p>
+
+          <p>
+            <label for="Estado Civil">Estado Civil:</label>
+            <input
+              type="text"
+              name="Estado Civil"
+              id="Estado Civil"
+              required
+              placeholder="Casado/Solteiro"
+              size="10"
+            />
+          </p>
+
+          <label for="Telefone">Telefone:</label>
+          <input
+            type="text"
+            name="Telefone"
+            id="Telefone"
+            required
+            placeholder="DDD"
+          />
+
+          <p>
+            <label for="E-mail">E-mail:</label>
+            <input
+              type="text"
+              name="E-mail"
+              id="E-mail"
+              required
+              placeholder="E-mail"
+            />
+          </p>
+
+          <p id="cargo">
+            <label for="Cargo exercido ">CARGO PRETENDIDO: </label>
+            <input
+              type="text"
+              name="Cargo exercido"
+              id="Cargo exercido"
+              required
+              placeholder="Area de atuação"
+            />
+          </p>
+          <br />
+
+          <p id="enviar">
+            <input type="submit" value="ENVIAR" />
+          </p>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

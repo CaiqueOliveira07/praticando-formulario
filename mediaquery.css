@@ -1,0 +1,131 @@
+@charset "utf-8";
+
+/* 
+320px — 480px: dispositivos móveis.
+481px — 768px: iPads, tablets.
+769px — 1024px: telas pequenas, laptops.
+1025px — 1200px: desktops, telas grandes.
+1201px e acima — telas muito grandes, TVs.
+*/
+
+
+@media screen and (min-width: 768px) and (max-width:1024px)
+{  
+body{
+background-image: url(imagens/pc.jpg);
+position: absolute;
+font-size: larger;
+
+
+}
+
+div#imagem {
+    background-image:url(imagens/tablet.jpg)  ;
+    background-position: left;
+    box-shadow: 4px 4px 1px rgba(0, 0, 0, 0.469);
+    text-align: center;
+ margin-top: 100px;
+ 
+}
+
+
+div#imagem > h1 {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.785);
+    padding: 0%;
+    margin: 0%;
+    background-position: center;
+    border-radius: 25px 25px 0px 0px ;
+       }
+
+       label {
+        color: white;
+    }
+
+    p#cargo{
+        text-align: left;
+    }
+
+    form{
+        background-color: rgba(14, 25, 123, 0);
+    }
+
+
+}
+
+@media screen and  (min-width: 1024px) and (max-width:1200px)
+
+{
+
+    body{
+        background-image: url(imagens/pc.jpg)  ;
+        position: absolute;
+        display: grid;
+        grid-template-areas: "";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 100vh ;
+        }
+
+        div#imagem {
+            background-image: url(imagens/note.jpg);
+        }
+
+        label {
+            color: white;
+        }
+
+
+
+    
+}
+
+@media screen and  (min-width: 1200px) and (max-width:1440px)
+{
+    body{
+        background-image: url(imagens/tabletgg.jpg)  ;
+        position: absolute;
+        display: grid;
+        grid-template-areas: "profile timeline";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 100vh ;
+        }
+
+        div#imagem{
+
+            background-color: rgba(8, 0, 255, 0.171);
+         
+        }
+
+        form{
+background-image:  url(imagens/telag.jpg)  ;
+background-position: center;
+font-size: large;
+color: black;
+
+        }
+
+        div#imagem{
+display: block;
+margin-top: 10%;
+
+
+
+
+        }
+
+   
+
+
+
+}
+
+
+
+
+
+
+
+
+
+    
+
